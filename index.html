@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #1e88e5;
+            overflow: hidden;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li {
+            flex: 1;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            background-color: #1565c0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .toolbox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        
+        .tool {
+            background: linear-gradient(135deg, #ff9800, #f44336);
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .tool:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tool img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        
+        .tool h3 {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .tool a {
+            margin-top: auto;
+            text-decoration: none;
+            color: white;
+            background: #00000033;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .tool a:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        footer {
+            background-color: #212121;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Dashboard</h1>
+    </header>
+
+    <!-- Quick Access Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#material">Material</a></li>
+        </ul>
+    </nav>
+
+    <!-- Body Section -->
+    <div class="container">
+        <h2>Quick Tools</h2>
+        <div class="toolbox">
+            <!-- Fake Certificate Generator -->
+            <div class="tool">
+                <img src="https://via.placeholder.com/80" alt="Fake Certificate Generator">
+                <h3>Fake Certificate Generator</h3>
+                <a href="fake-certificate-generator.html">Open Tool</a>
+            </div>
+
+            <!-- Material -->
+            <div class="tool">
+                <img src="https://via.placeholder.com/80" alt="Material">
+                <h3>Material</h3>
+                <a href="material.html">Explore</a>
+            </div>
+
+            <!-- Projects -->
+            <div class="tool">
+                <img src="https://via.placeholder.com/80" alt="Projects">
+                <h3>Projects</h3>
+                <a href="projects.html">View Projects</a>
+            </div>
+
+            <!-- Assignments -->
+            <div class="tool">
+                <img src="https://via.placeholder.com/80" alt="Assignments">
+                <h3>Assignments</h3>
+                <a href="assignments.html">Download Assignments</a>
+            </div>
+
+            <!-- Lab Manual -->
+            <div class="tool">
+                <img src="https://via.placeholder.com/80" alt="Lab Manual">
+                <h3>Lab Manual</h3>
+                <a href="lab-manual.html">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer>
+        <p>&copy; 2024 Dashboard. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
