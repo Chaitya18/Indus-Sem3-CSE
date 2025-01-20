@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background: #7A0371;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: black;
+        }
+        
+        header {
+            background: rgb(32, 31, 31);
+            color: rgba(175, 139, 86, 255);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        header .logo {
+            width: 25%;
+            height: auto;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background: rgb(32, 31, 31);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form {
+            width: 400px;
+            height: auto;
+            /* Changed to auto for better responsiveness */
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/image-removebg-preview%20(1).png?raw=true" alt="EduEase Logo" class="logo">
+            <h1>Welcome to EduEase</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dashboard. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
