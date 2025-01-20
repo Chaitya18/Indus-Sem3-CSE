@@ -7,24 +7,35 @@
     <title>Dashboard</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: #7A0371;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            color: black;
         }
         
         header {
-            background-color: #4caf50;
-            color: white;
+            background: rgb(32, 31, 31);
+            color: rgba(175, 139, 86, 255);
             padding: 20px;
-            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+        }
+        
+        header .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
         }
         
         nav {
-            background-color: rgb(239, 111, 226);
+            background: yellow;
             overflow: hidden;
         }
         
@@ -44,143 +55,142 @@
             display: block;
             padding: 15px 0;
             text-align: center;
-            color: white;
+            color: black;
             text-decoration: none;
             font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
         }
         
         nav ul li a:hover {
-            background-color: #1565c0;
+            background: rgb(75, 225, 75);
+            color: black;
         }
         
         .container {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
             text-align: center;
             flex: 1;
         }
         
+        .container h2 {
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
         .toolbox {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            justify-items: center;
         }
         
         .tool {
-            background: linear-gradient(135deg, #ff9800, #f44336);
+            background: rgb(32, 31, 31);
             border-radius: 10px;
-            color: white;
+            color: rgba(175, 139, 86, 255);
             padding: 20px;
             text-align: center;
-            width: 200px;
-            height: 250px;
+            height: 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .tool:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         
         .tool img {
             width: 80px;
             height: 80px;
-            margin-bottom: 10px;
+            margin-bottom: 1px;
+            border-radius: 50%;
+            align-items: center;
+            background: white;
         }
         
         .tool h3 {
             margin: 10px 0;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
         
         .tool a {
-            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
-            color: white;
-            background: #00000033;
-            padding: 8px 15px;
+            color: rgb(32, 31, 31);
+            background: #e1d7e0;
+            padding: 10px;
             border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s ease;
+            height: 40%;
+            width: 70%;
+            font-weight: bold;
+            max-height: 40px;
+            align-items: center;
         }
         
         .tool a:hover {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(255, 255, 255, 0.3);
+            /* Hover effect */
         }
         
         footer {
-            background-color: #212121;
+            background: rgb(32, 31, 31);
             color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to the Dashboard</h1>
+        <div class="header-content">
+            <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/image-removebg-preview%20(1).png?raw=true" alt="EduEase Logo" class="logo">
+            <!-- Add your logo here -->
+            <h1>Welcome to EduEase</h1>
+        </div>
     </header>
 
-    <!-- Quick Access Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#material">Material</a></li>
+            <li><a href="# ">Home</a></li>
+            <li><a href="#about ">About</a></li>
+            <li><a href="#contact ">Contact</a></li>
+            <li><a href="#material ">Material</a></li>
         </ul>
     </nav>
-
-    <!-- Body Section -->
-    <div class="container">
-        <h2>Quick Tools</h2>
-        <div class="toolbox">
-            <!-- Fake Certificate Generator -->
-            <div class="tool">
-                <img src="https://via.placeholder.com/80" alt="Fake Certificate Generator">
-                <h3>Fake Certificate Generator</h3>
-                <a href="fake-certificate-generator.html">Open Tool</a>
-            </div>
-
-            <!-- Material -->
-            <div class="tool">
-                <img src="https://via.placeholder.com/80" alt="Material">
-                <h3>Material</h3>
-                <a href="material.html">Explore</a>
-            </div>
-
-            <!-- Projects -->
-            <div class="tool">
-                <img src="https://via.placeholder.com/80" alt="Projects">
+    <div class="container ">
+        <div class="toolbox ">
+            <div class="tool ">
+                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/project.png?raw=true" alt="Projects ">
                 <h3>Projects</h3>
-                <a href="projects.html">View Projects</a>
+                <a href="projects.html ">View Projects</a>
             </div>
-
-            <!-- Assignments -->
-            <div class="tool">
-                <img src="https://via.placeholder.com/80" alt="Assignments">
+            <div class="tool ">
+                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/assignments.png?raw=true" alt="Assignments">
                 <h3>Assignments</h3>
-                <a href="assignments.html">Download Assignments</a>
+                <a href="assignments.html ">Download Assignments</a>
             </div>
-
-            <!-- Lab Manual -->
-            <div class="tool">
-                <img src="https://via.placeholder.com/80" alt="Lab Manual">
+            <div class="tool ">
+                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/format.png?raw=true" alt="Lab Manual ">
                 <h3>Lab Manual</h3>
-                <a href="lab-manual.html">Download</a>
+                <a href="lab-manual.html ">Download</a>
             </div>
         </div>
     </div>
 
-    <!-- Fixed Footer -->
     <footer>
         <p>&copy; 2024 Dashboard. All Rights Reserved.</p>
     </footer>
