@@ -5,153 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            padding: 0;
-            background: #7A0371;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            color: black;
-        }
-        
-        header {
-            background: rgb(32, 31, 31);
-            color: rgba(175, 139, 86, 255);
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-content {
-            display: flex;
-        }
-        
-        header .logo {
-            width: 25%;
-            height: auto;
-            margin-right: 10px;
-        }
-        
-        nav {
-            background: yellow;
-            overflow: hidden;
-        }
-        
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        nav ul li {
-            flex: 1;
-        }
-        
-        nav ul li a {
-            display: block;
-            padding: 15px 0;
-            text-align: center;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            background: rgb(75, 225, 75);
-            color: black;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-            flex: 1;
-        }
-        
-        .container h2 {
-            color: black;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        
-        .toolbox {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        
-        .tool {
-            background: rgb(32, 31, 31);
-            border-radius: 10px;
-            color: rgba(175, 139, 86, 255);
-            padding: 20px;
-            text-align: center;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .tool:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-        
-        .tool img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 1px;
-            border-radius: 50%;
-            align-items: center;
-            background: white;
-        }
-        
-        .tool h3 {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        
-        .tool a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: rgb(32, 31, 31);
-            background: #e1d7e0;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-            height: 40%;
-            width: 70%;
-            font-weight: bold;
-            max-height: 40px;
-            align-items: center;
-        }
-        
-        .tool a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            /* Hover effect */
-        }
-        
-        footer {
-            background: rgb(32, 31, 31);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -170,27 +25,27 @@
             <li><a href="material.html">Material</a></li>
         </ul>
     </nav>
-    <div class="container ">
-        <div class="toolbox ">
-            <div class="tool ">
-                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/project.png?raw=true" alt="Projects ">
+    <div class="container">
+        <div class="toolbox">
+            <div class="tool">
+                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/project.png?raw=true" alt="Projects">
                 <h3>Projects</h3>
-                <a href="projects.html ">View Projects</a>
+                <a href="projects.html">View Projects</a>
             </div>
-            <div class="tool ">
+            <div class="tool">
                 <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/assignments.png?raw=true" alt="Assignments">
                 <h3>Assignments</h3>
-                <a href="assignments.html ">Assignments</a>
+                <a href="assignments.html">Assignments</a>
             </div>
-            <div class="tool ">
-                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/format.png?raw=true" alt="Lab Manual ">
+            <div class="tool">
+                <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/format.png?raw=true" alt="Lab Manual">
                 <h3>Lab Manual Format</h3>
-                <a href="lab-manual.html ">Download</a>
+                <a href="lab-manual.html">Download</a>
             </div>
-            <div class="tool ">
+            <div class="tool">
                 <img src="https://github.com/Chaitya18/Indus-Sem3-CSE/blob/main/assignments.png?raw=true" alt="Assignments">
                 <h3>Practicals</h3>
-                <a href="practical.html ">Practicals</a>
+                <a href="practical.html">Practicals</a>
             </div>
         </div>
     </div>
